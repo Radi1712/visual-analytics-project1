@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./src/main.js" type="module"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Board Game Visual Analytics</title>
+  </head>
+
+  <body>
+    <!-- 🔹 Min Age Controls + Donut Chart -->
+    <div id="donut-container">
+        <div id="age-controls"></div>
+        <svg id="chart"></svg>
+    </div>
+
+    <!-- 🔹 Category Controls + LDA Plot -->
+    <div id="lda-container">
+        <div id="category-controls">
+        <strong>Select categories:</strong><br />
+        <label><input type="checkbox" value="Economic" checked /> Economic</label><br />
+        <label><input type="checkbox" value="Fantasy" checked /> Fantasy</label><br />
+        <label><input type="checkbox" value="Adventure" checked /> Adventure</label><br />
+        <label><input type="checkbox" value="Science Fiction" checked /> Science Fiction</label><br />
+        <label><input type="checkbox" value="Fighting" checked /> Fighting</label><br />
+        </div>
+        <svg id="ldaPlot"></svg>
+    </div>
+    </body>
+</html>
